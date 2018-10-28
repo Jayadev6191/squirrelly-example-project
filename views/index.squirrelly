@@ -1,0 +1,19 @@
+<html>
+<head>
+    <style>
+        body {
+            background-color: #202020;
+            color: #FFF;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the world of {{title}}</h1>
+    <h3>Few of the popular javascript template engines are</h3>
+    <ul>
+        {{foreach(options.template_engines)}}
+            <li>{{@this}}</li>
+        {{/foreach}}
+    </ul>
+</body>
+</html>
